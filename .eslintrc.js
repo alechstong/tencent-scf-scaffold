@@ -1,6 +1,11 @@
 module.exports = {
   extends: ['eslint:recommended'],
-  rules: {},
+  rules: {
+    'no-console': 'off',
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    'import/no-commonjs': 'off',
+  },
   parser: 'babel-eslint',
   ecmaFeatures: {
     arrowFunctions: true,
